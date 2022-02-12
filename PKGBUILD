@@ -9,9 +9,9 @@ pkgdesc="Applications useful for Plasma development"
 arch=(i686 x86_64)
 url='https://projects.kde.org/plasma-sdk'
 license=(LGPL)
-depends=(plasma-framework ktexteditor knewstuff qt5-webkit)
-makedepends=(extra-cmake-modules)
-source=("git://anongit.kde.org/plasma-sdk.git")
+depends=(plasma-framework-git perl)
+makedepends=(extra-cmake-modules-git kdoctools-git ktexteditor-git)
+source=("git+https://invent.kde.org/plasma/${pkgname%-git}.git")
 md5sums=('SKIP')
 
 pkgver() {
